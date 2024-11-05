@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import Image from "next/image";
+import Link from "next/link";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -45,12 +46,21 @@ export default function RootLayout({
         </div>
 
       </div>
+  
+      <div className="bg-[#124b44] flex justify-around text-white py-2">
+      <Link href={"/"}> Services</Link>
+      <Link href={"/"}> History</Link>
+      <Link href={"/"}> Portfolio</Link>
+      <Link href={"/"}> Suscribe</Link>   
+      </div>
 
-        
-
-        
         {children}
       </body>
+
+      
+
+        
+
     </html>
   );
 }
