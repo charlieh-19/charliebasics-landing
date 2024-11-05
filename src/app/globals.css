@@ -20,4 +20,14 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.myswiper .swiper-pagination-bullet {
+   background: #88be47;
+}
 
+.myswiper .swiper-button-next {
+  color: #88be47;
+}
+
+.myswiper .swiper-button-prev {
+  color: #88be47;
+}
