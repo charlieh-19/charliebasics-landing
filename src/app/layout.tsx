@@ -26,7 +26,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth scroll-pt-[40px] snap-start" >
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
@@ -41,17 +41,19 @@ export default function RootLayout({
           height={200}
         />
        
-       <div className="absolute flex items-center justify-center top-10 w-full h-full z-10 text-white">
+        <div className="absolute flex items-center justify-center pb-6 bottom-0 w-full z-10 text-white">
            <p>Social Media and Graphic Designer</p>
         </div>
 
       </div>
   
-      <div className="bg-[#124b44] flex justify-around text-white py-2">
-      <Link href={"/"}> Services</Link>
-      <Link href={"/"}> History</Link>
-      <Link href={"/"}> Portfolio</Link>
-      <Link href={"/"}> Suscribe</Link>   
+      <div className="sticky top-0 z-10">  
+       <div className="bg-[#124b44] flex justify-around text-white py-2">
+        <Link href={"#services"}> Services</Link>
+        <Link href={"#history"}> History</Link>
+        <Link href={"#portfolio"}> Portfolio</Link>
+        <Link href={"#suscribe"}> Suscribe</Link>   
+       </div>
       </div>
 
         {children}

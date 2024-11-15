@@ -14,8 +14,7 @@ export default function Home() {
     <div className="flex bg-[#0f0f0f] items-center">  
     
         <div className="p-5 text-white items-baseline w-3/6">
-      
-        <h1 className="font-bold text-3xl"
+        <h1 id="services" className="font-bold text-3xl"
         >Services</h1>
 
         <p className="pt-2">
@@ -51,7 +50,7 @@ export default function Home() {
       </div>
       
       <div className="p-5 text-white w-3/6 items-baseline">
-        <h1 className="font-bold text-3xl"
+        <h1 id="history" className="font-bold text-3xl"
         >History</h1>
 
         <p className="pt-2">
@@ -65,7 +64,7 @@ export default function Home() {
     </div>
 
     <div className="bg-[#124b44] flex justify-around text-white py-5">
-      <h1 className="font-bold text-3xl"> Portfolio </h1>
+      <h1 id="portfolio" className="font-bold text-3xl"> Portfolio </h1>
     </div>
 
     <div className="flex bg-[#0f0f0f]">
@@ -192,7 +191,7 @@ export default function Home() {
 
     
      <div className="bg-[#0f0f0f] flex justify-center text-white pt-20">
-      <h1 className="font-bold text-3xl"> Suscribe </h1>
+      <h1 id="suscribe" className="font-bold text-3xl"> Suscribe </h1>
      </div>
     
      <div className="relative"> 
@@ -205,14 +204,14 @@ export default function Home() {
         />
      <div className="absolute top-10 z-10 pt-5 text-white">
       
-      
-       <p className="m-auto px-80">
+      <div className="m-auto px-80">
+       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
         Etiam lacinia ex suscipit, sodales eros ut, suscipit massa. 
         Nam dictum lacus sit amet ante rhoncus aliquet. 
         Suspendisse nec nunc nec eros iaculis porttitor. 
         Suspendisse condimentum rhoncus ipsum.
-       
+       </p>          
        <div className="flex justify-around pt-48">
        <button className="bg-[#88be47] font-bold text-white text-xl py-2 px-4">
           <text>$200 al mes</text>
@@ -226,7 +225,7 @@ export default function Home() {
           <text>$600 al mes</text>
        </button>
        </div>
-       </p>          
+      </div>
 
      </div>
  
